@@ -1,0 +1,66 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+/* navigation bar */
+.navbar{
+    background-color: black;
+}
+
+.navlinktext{
+    color: white;
+}
+
+.currency-dropdown{
+    background-color: black;
+}
+
+a.navlinktext:link,a.navlinktext:visited{
+    color: white;
+}
+
+
+a.navlinktext:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+#navsectionleft{
+    float:left; 
+    width:33.33%;
+}
+
+#navsectionmid{
+    float:left; 
+    width:33.33%;
+}
+
+#navsectionright{
+    float:right;
+    width:33.33%;
+}
+
+/* footer section */
+.my-3 a.footerlink:link, .my-3 a.footerlink:visited{
+    color: black;
+    margin: 3px;
+}
+
+.my-3 a.footerlink:hover, .my-3 a.footerlink:active{
+    text-decoration: underline;
+
+}
+
+@media(min-width:768px){
+    .newsletter-input {
+        width: 75%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
+.newsletter-input-button{
+    background-color: black;
+}
+
