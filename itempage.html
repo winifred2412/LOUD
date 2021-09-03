@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href= style.css>
+    <link rel="stylesheet" href= itempage.css>
+    <title>LOUD Brand</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md py-3 fixed-top">
+        <div class="container">
+            <!-- first section of navigation bar -->
+            <!-- will not be displayed on smaller screens -->
+            <div class="collapse navbar-collapse" id="navsectionleft">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#faq-page" class="navlinktext nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutus-page" class="navlinktext nav-link ">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center" id="navsectionmid">
+                <!--will be change to a brand symbol-->
+                <!-- serves as link to homepage -->
+                <a href="#homepage" class="navbar-brand">LOUD</a>
+            </div>
+            
+
+            <div class="navbar-nav" id="navsectionright">
+                <ul class="nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <!-- links will change currency displayed -->
+                        <!-- could be changed to button -->
+                        <a class="navlinktext nav-link dropdown-toggle mx-2 pt-3 " href="#" data-bs-toggle="dropdown">
+                          CAD
+                        </a>
+                        <ul class="currency-dropdown dropdown-menu dropdown-menu-dark">
+                          <li><a class="navlinktext dropdown-item " href="#">USD</a></li>
+                          <li><a class="navlinktext dropdown-item " href="#">EURO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="h3 nav-link bi bi-cart3 text-light mx-2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cart" data-bs-toggle="offcanvas"><i class="h3 nav-link bi bi-person text-light mx-2"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- offcanvas displaying items in cart -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-center">CART</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-white py-4 text-dark">
+
+        <div class="container-fluid display px-4">
+            <div class="row py-4">
+                <div class="col-12 col-md-8">
+
+                    <div class="vh-100 overflow-scroll">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img class="itempage-image img-fluid" src="images/photo.jpeg" alt="Images from instagram of clothing item">
+                                <img class="itempage-image img-fluid" src="images/photo.jpeg" alt="Images from instagram of clothing item">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="itempage-image img-fluid" src="images/photo.jpeg" alt="Images from instagram of clothing item">
+                                <img class="itempage-image img-fluid" src="images/photo.jpeg" alt="Images from instagram of clothing item">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h3 class="item-name">NAME OF ITEM</h3>
+                    <b class="my-4">PRICE</b><br>
+
+                    <form action="#">
+
+                        <div class="clothing-color-input-group form-group my-4">
+                            <label 
+                            for="color-input" 
+                            class="form-label my-2">Choose colour:</label>
+    
+                            <!-- adjust number of inputs available -->
+                            <input 
+                            type="color" 
+                            class="clothing-color-input form-control form-control-color" 
+                            id="color-black"
+                            value="#000000" 
+                            title="Choose your color">
+                        </div>
+
+                        <div class="row no-gutters my-4">
+    
+                            <div class="sizes col-12 col-md-8">
+                                <div class="d-flex justify-content-between text-center" id="item-size">
+                                    
+                                    <p class="mt-1" style="color: black;">size:</p>
+
+                                    <input type="radio" id="XS-size" name="clothingsize" value="XS">
+                                    <label class="label btn" for="XS-size">XS</label>
+                                    <input type="radio" id="S-size" name="clothingsize" value="S">
+                                    <label class="label btn" for="S-size">S</label>
+                                    <input type="radio" id="M-size" name="clothingsize" value="M">
+                                    <label class="label btn" for="M-size">M</label>
+                                    <input type="radio" id="L-size" name="clothingsize" value="L">
+                                    <label class="label btn" for="L-size">L</label>
+                                    <input type="radio" id="XL-size" name="clothingsize" value="XL">
+                                    <label class="label btn" for="XL-size">XL</label>
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-12 col-md-4">
+                                <a class="btn btn-sm btn-outline-dark pt-0 mt-1" data-bs-toggle="offcanvas" href="#sizeguide" role="button" aria-controls="offcanvasExample">
+                                    size guide
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="btn my-2">
+                            <button type="button" class="btn btn-lg btn-outline-dark" id="addtocart">add to cart</button>
+                        </div>
+
+                        <div class="btn my-2">
+                            <button type="button" class="btn btn-lg btn-outline-dark" id="checkoutbutton">checkout</button>
+                        </div>
+                    </form>
+
+                    <!-- accordian to display product information -->
+                    <div class="my-4 accordion accordion-flush" id="accordionFlushExample">
+                        <!-- product details -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              <b>PRODUCT DETAILS</b>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+
+                        <!-- delivery -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <b>DELIVERY</b>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            </div>
+                          </div>
+
+                        <!-- returns -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              <b>RETURNS</b>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- offcanvas for size guide tables -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sizeguide" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel">SIZE GUIDE</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+        </div>
+    </div>
+
+    <section class="py-5">
+
+        <h3 class="text-center mb-4" style="text-decoration: underline;">MORE IN THIS COLLECTION</h3>
+
+        <div class="container-fluid">
+            <div id="carouselindicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-interval="9000">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+                <!-- copy javascript and css to make carousel slide one image at a time -->
+                <div class="carouselimages carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-6 col-md-3 active">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 1"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 2"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 3"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 4"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 5"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 6"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 7"></a>
+                    </div>
+                    <div class="carousel-item col-6 col-md-3">
+                        <a href="#"><img class="img-fluid mx-auto d-block" src="images/photo.jpeg" alt="slide 8"></a>
+                    </div>
+                </div>
+
+                <button 
+                    class="carousel-control-prev" 
+                    type="button" 
+                    data-bs-target="#carouselindicators" 
+                    data-bs-slide="prev">
+
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button 
+                    class="carousel-control-next" 
+                    type="button" 
+                    data-bs-target="#carouselindicators" 
+                    data-bs-slide="next">
+
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="text-body p-5">
+        <div class="container d-md-flex justify-content-between">
+
+            <div class="container col col-md-4">
+                <ul class="list-unstyled  px-4">
+                    <li class="my-3"><a class="footerlink" href="#">ABOUT US</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">SHIPPING</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">REFUND POLICY</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">FAQ</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">CONTACT US</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">SIZE GUIDE</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">PRIVACY POLICY</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">PAYMENT POLICY</a></li>
+                    <li class="my-3"><a class="footerlink" href="#">TERMS OF SERVICE</a></li>
+                </ul>
+            </div>
+
+            <div class="container col mx-3">
+                <p>LOUD The brand loud was inspired by........</p> 
+
+                <h3 class= "mb-3">SUBSCRIBE FOR LATEST RELEASES</h3>
+
+                <div class="newsletter-input input-group mb-3">
+                    <input
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Enter email address"/>
+
+                    <button
+                    class="newsletter-input-button btn btn-dark btn-lg" 
+                    type="button">ENTER</button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.itempage-image{
+    margin-top: 15px;
+}
+
+
+.clothing-color-input-group{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.clothing-color-input{
+    padding: 0px;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.sizes{
+    height: 50px;
+}
+input[type=radio] {
+    display:none;
+ }
+ 
+input[type=radio] + label {
+    display: inline-block;
+    padding: 6px;
+    margin-right: 3px;
+    color: black;
+ }
+ 
+input[type=radio]:checked + label {
+    background: rgb(167, 164, 164);
+    color: #000;
+ }
+
+.label:hover{
+    background-color: rgb(167, 164, 164);
+}
+
+#addtocart{
+    min-width: 250px;
+    min-height: 50px;
+    border-radius: 25px;
+}
+
+#addtocart:hover{
+    background-color: black;
+}
+
+#checkoutbutton{
+    min-width: 250px;
+    min-height: 50px;
+    border-radius: 25px;
+}
+
+#checkoutbutton:hover{
+    background-color: black;
+}
+
+
+.carousel .carousel-item {
+    height: 500px;
+}
+  
+.btn.picturebutton{
+
+    min-height: 250px !important;
+    background-image: url(images/photo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
