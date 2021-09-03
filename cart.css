@@ -1,0 +1,50 @@
+
+a#item-name:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.continue-shopping{
+    background-color: black;
+    color: white;
+}
+
+img{
+    max-width: 70%; 
+    height:auto;
+}
+.remove{
+    color: gray;
+    font-size: 80%;
+}
+
+.remove:hover{
+    color:gray;
+}
+
+.quantity{
+    border: 1px solid black;
+    width: 80%;
+}
+
+.area,.area2{
+    float: right;
+}
+
+.area{
+    max-width: 100%;
+}
+
+#subtotal{
+    font-size: 90%;
+    color: grey;
+}
+.last{
+    background-color: black;
+    color: white;
+}
+
+.last:hover{
+    background-color: black;
+    color: white;
+}
