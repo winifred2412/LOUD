@@ -1,0 +1,24 @@
+.showcase{
+    background-color: black;
+}
+
+.homepage-button {
+
+    min-width: 250px !important;
+    border-radius: 25px;
+    background-color: rgb(99, 97, 97);
+    opacity: 0.3;
+}
+
+a{
+    text-decoration-line: none;
+    color:black;
+}
+
+a.homepage-button:link, a.homepage-button:visited{
+    color: black;
+}
+
+a.homepage-button:hover{
+    background-color: rgb(223, 217, 217);
+}
