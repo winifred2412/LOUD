@@ -1,0 +1,62 @@
+h3{
+    color: black; 
+    text-decoration: underline;
+}
+
+.shopping-categories-link {
+    min-width: 300px !important;
+    border-radius: 20px;
+    background-color: rgb(252, 248, 248);
+    opacity: 0.3;
+}
+
+.modal-buttons{
+    position: relative;
+}
+
+.instagram-section{
+    background-color: rgb(75, 75, 74);
+}
+
+.card.my-3{
+    border: none;
+}
+
+@media(min-width:768px){
+    .picture-button{
+        width: 24.5%;
+        min-height: 250px !important;
+        background-image: url(images/photo.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 0px;
+        margin: 3px;
+    }
+}
+
+@media(max-width:768px){
+    .picture-button{
+        width: 48.8%;
+        min-height: 250px !important;
+        background-image: url(images/photo.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 0px;
+        margin: 3px;
+    }
+}
+
+@media(max-width:576px){
+    .picture-button{
+        width: 47.95%;
+        min-height: 250px !important;
+        background-image: url(images/photo.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 0px;
+        margin: 3px;
+    }
+}
+
+
+
