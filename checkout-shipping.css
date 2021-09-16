@@ -1,0 +1,131 @@
+
+.nav{
+    width: 100%; 
+    text-align: center;
+}
+nav{
+    margin: 0 auto; 
+    display: inline-block;
+}
+
+#info, .shipping{
+    border:1.5px solid rgb(177, 175, 175);
+    border-radius:5px;
+}
+
+.customer-information{
+    max-width: 100%;
+}
+
+.customer-contact{
+    width: 30%;
+    float: left;
+}
+
+#customer-email,#customer-address{
+    width: 40%;
+}
+
+#change{
+    float: right;
+}
+
+.okay{
+    padding-left: 8em;
+    padding-right: 4em;
+    padding-top: 5em;
+    position: relative;
+}
+
+.okay2{
+    padding-left: 4em;
+    padding-right: 8em;
+    padding-top: 5em;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.shipping-price{
+    float: right;
+}
+
+.label-1{
+    float: left;
+}
+
+
+
+#continue-to-shipping{
+    background-color: black;
+}
+
+.checkout-footer{
+    font-size:80%;
+}
+
+.item{
+    position: relative; 
+    max-width: 100%; 
+    height:auto;
+}
+
+.item-price{
+    float: right;
+}
+
+.btn.fas.fa-chevron-left{
+    margin-top: 1em;
+}
+
+#discount-code{
+    max-width: 100%;
+}
+
+#discount-button{
+    height: 2.7em;
+    background-color: gray;
+}
+
+.checkout-display-1{
+    max-width: 100%;
+}
+
+.checkout-display-2{
+    width: 50%; 
+    float: left;
+}
+
+.checkout-display-3{
+    width: 50%; 
+    float: right; 
+    text-align: end;
+}
+
+.checkout-display-2.one{
+    color:gray;
+}
+
+.checkout-display-3.one{
+    color:gray;
+}
+
+.input-1{
+    box-shadow: none;
+    border: 1.5px solid rgb(177, 175, 175);
+    border-radius: 5px;
+    height: 3em;
+    padding: 1em;
+    font-size: 90%;
+    width: 100%;
+}
+
+.checkout-footer{
+    border: none;
+    font-size: 80%;
+}
+
+
+
